@@ -1,0 +1,105 @@
+:root {
+    --brand: #7c3aed;
+    --ink: #1f2937;
+    --background: #f8f7ff;
+    --card: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--ink);
+    background: var(--background);
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: var(--card);
+}
+
+header h1 {
+    margin: 0;
+    color: var(--brand);
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a,
+.contact-links a,
+.project-card a {
+    color: var(--brand);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+.contact-links a:hover,
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 84%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    color: var(--brand);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.project-card {
+    background: var(--card);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--card);
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
