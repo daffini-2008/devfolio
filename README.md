@@ -21,3 +21,6 @@ It showcases my projects, skills, and contact information.
 ## Live Website
 
 https://daffini-2008.github.io/devfolio/
+## Final Submission
+
+This portfolio was created as part of my web development course and deployed using GitHub Pages.
